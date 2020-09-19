@@ -1,11 +1,13 @@
-FROM node:latest AS development
+FROM node:latest
 
-RUN mkdir /srv/smartcarAPI
+RUN mkdir -p /usr/src/app
 
-WORKDIR /srv/smartcarAPI
+WORKDIR /usr/src/app
 
-COPY package.json package-lock.json ./
+COPY . .
 
 RUN npm install
 
-CMD ["npm", "start:development"]
+EXPOSE 3000
+
+CMD ["npm", "run", "start:development"]

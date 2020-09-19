@@ -1,18 +1,11 @@
-version: '3.7'
-
+version: '3.8'
 services:
-  smartcarapi:
-    build:
+  api:
+    image: smartcarapi
+    build: 
       context: .
-      target: development
-    command: npx nodemon server.js
-    environment:
-      PORT: 3000
+      dockerfile: ./Dockerfile
     ports:
-      - '3000:3000'
+      - "3000:3000"
     volumes:
-      - .:/srv/smartcarAPI
-      - smartcarapi_node_modules:/srv/smartcarAPI/node_modules
-
-volumes:
-  smartcarapi_node_modules:
+      - ./:/usr/src/app

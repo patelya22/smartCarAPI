@@ -1,15 +1,23 @@
 process.env.Node_TLS_REJECT_UNATHORIZED = "0";
 module.exports = {
     debug: {
-        api_port : process.env.API_PORT || 3000,
+        apiPort : process.env.API_PORT || 3000,
+        logLevel: 'debug',
+        GMendPoint: 'http://gmapi.azurewebsites.net/getVehicleInfoService'
     },
     test: {
-        api_port : process.env.API_PORT || 3000,
+        apiPort : process.env.API_PORT || 3000,
+        logLevel: 'info',
+        GMendPoint: 'http://gmapi.azurewebsites.net/getVehicleInfoService'
     },
     development: {
-        api_port : process.env.API_PORT || 3000,
+        apiPort : process.env.API_PORT || 3000,
+        logLevel: 'debug',
+        GMendPoint: 'http://gmapi.azurewebsites.net/getVehicleInfoService'
     },
-    debug: {
-        api_port : process.env.API_PORT || 3000,
+    production: {
+        apiPort : process.env.API_PORT || 3000,
+        logLevel: 'info',
+        GMendPoint: 'http://gmapi.azurewebsites.net/getVehicleInfoService'
     },
 }

@@ -23,11 +23,14 @@ const express = require("express"),
             new transports.Console(),
           ]
     });
-
-require("./api/routes/smartcarAPIRoutes")(app);
-// app.use('/v1', require("./api/routes/smartcarAPIRoutes")(app));
 port = config.apiPort;
+
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+
+require("./api/routes/smartcarAPIRoutes")(app);
 app.listen(port);
+
+
 logger.info("API server started on: " + port);
+module.exports = app; // for testing

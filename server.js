@@ -7,6 +7,8 @@ const { createLogger, transports, format } = require("winston");
 const express = require("express"),
     app = express(),
     bodyParser = require("body-parser");
+    swaggerUi = require('swagger-ui-express'),
+    swaggerDocument = require('./swagger.json');
     logger = createLogger({
         level: config.logLevel,
         format: format.combine(
@@ -27,6 +29,7 @@ port = config.apiPort;
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 require("./api/routes/smartcarAPIRoutes")(app);
 app.listen(port);

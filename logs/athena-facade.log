@@ -497,3 +497,142 @@
 2020-09-19 14:20:24:2024 error: Vehicle id: 123 not found.
 2020-09-19 14:20:24:2024 error: MISSING DATA PLEASE PASS DATA
 2020-09-19 14:20:24:2024 error: INVALID ACTION PASSED. VALID ACTION 'START' OR 'STOP'
+2020-09-19 22:00:59:059 info: API server started on: 3000
+2020-09-19 22:01:01:11 debug: GETTING THE VEHICLE INFO
+2020-09-19 22:01:01:11 error: Vehicle id: 10 not found.
+2020-09-19 22:01:08:18 debug: GETTING THE VEHICLE INFO
+2020-09-19 22:01:31:131 info: API server started on: 3000
+2020-09-19 22:01:31:131 debug: GETTING THE VEHICLE INFO
+2020-09-19 22:01:32:132 debug: GETTING THE VEHICLE INFO
+2020-09-19 22:01:33:133 debug: GETTING THE VEHICLE INFO
+2020-09-19 22:01:40:140 info: API server started on: 3000
+2020-09-19 22:01:44:144 info: API server started on: 3000
+2020-09-19 22:01:50:150 info: API server started on: 3000
+2020-09-19 22:01:54:154 info: API server started on: 3000
+2020-09-19 22:08:31:831 info: API server started on: 3000
+2020-09-19 22:08:45:845 info: API server started on: 3000
+2020-09-19 22:12:29:1229 info: API server started on: 3000
+2020-09-19 22:13:06:136 info: API server started on: 3000
+2020-09-19 22:14:09:149 info: API server started on: 3000
+2020-09-19 22:14:22:1422 info: API server started on: 3000
+2020-09-19 22:16:10:1610 info: API server started on: 3000
+2020-09-19 22:16:52:1652 info: API server started on: 3000
+2020-09-19 22:18:48:1848 info: API server started on: 3000
+2020-09-19 22:19:53:1953 info: API server started on: 3000
+2020-09-19 22:20:08:208 info: API server started on: 3000
+2020-09-19 22:20:19:2019 info: API server started on: 3000
+2020-09-19 22:20:43:2043 info: API server started on: 3000
+2020-09-19 22:38:08:388 info: API server started on: 3000
+2020-09-19 22:39:22:3922 info: API server started on: 3000
+2020-09-19 22:40:02:402 info: API server started on: 3000
+2020-09-19 22:40:42:4042 info: API server started on: 3000
+2020-09-19 22:40:46:4046 info: API server started on: 3000
+2020-09-19 22:41:17:4117 info: API server started on: 3000
+2020-09-19 22:45:09:459 info: API server started on: 3000
+2020-09-19 22:45:42:4542 info: API server started on: 3000
+2020-09-19 22:45:49:4549 info: API server started on: 3000
+2020-09-19 22:46:14:4614 info: API server started on: 3000
+2020-09-19 22:47:04:474 info: API server started on: 3000
+2020-09-19 22:47:15:4715 info: API server started on: 3000
+2020-09-19 22:47:47:4747 info: API server started on: 3000
+2020-09-19 22:47:53:4753 debug: GETTING THE VEHICLE INFO
+2020-09-19 22:47:53:4753 error: Vehicle id: 12 not found.
+2020-09-19 23:16:13:1613 info: API server started on: 3000
+2020-09-19 23:16:24:1624 info: API server started on: 3000
+2020-09-19 23:16:33:1633 info: API server started on: 3000
+2020-09-19 23:17:27:1727 info: API server started on: 3000
+2020-09-19 23:17:42:1742 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:17:43:1743 error: Vehicle id: 12 not found.
+2020-09-19 23:18:30:1830 info: API server started on: 3000
+2020-09-19 23:18:37:1837 info: API server started on: 3000
+2020-09-19 23:19:05:195 info: API server started on: 3000
+2020-09-19 23:19:08:198 info: API server started on: 3000
+2020-09-19 23:19:17:1917 info: API server started on: 3000
+2020-09-19 23:19:40:1940 info: API server started on: 3000
+2020-09-19 23:19:53:1953 info: API server started on: 3000
+2020-09-19 23:20:01:201 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:20:11:2011 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:20:19:2019 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:20:21:2021 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:20:21:2021 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:20:22:2022 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:20:22:2022 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:20:23:2023 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:20:24:2024 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:23:41:2341 info: API server started on: 3000
+2020-09-19 23:24:19:2419 info: API server started on: 3000
+2020-09-19 23:24:32:2432 info: API server started on: 3000
+2020-09-19 23:24:49:2449 debug: GETTING THE VEHICLE SECURITY
+2020-09-19 23:24:50:2450 error: Vehicle id: 1 not found.
+2020-09-19 23:25:07:257 info: API server started on: 3000
+2020-09-19 23:25:26:2526 info: API server started on: 3000
+2020-09-19 23:25:30:2530 info: API server started on: 3000
+2020-09-19 23:25:38:2538 debug: GETTING THE VEHICLE SECURITY
+2020-09-19 23:25:38:2538 debug: GOT THE SECURITY INFO FOR
+2020-09-19 23:25:52:2552 info: API server started on: 3000
+2020-09-19 23:26:06:266 info: API server started on: 3000
+2020-09-19 23:29:43:2943 info: API server started on: 3000
+2020-09-19 23:30:07:307 info: API server started on: 3000
+2020-09-19 23:31:01:311 info: API server started on: 3000
+2020-09-19 23:31:12:3112 debug: GETTING THE VEHICLE SECURITY
+2020-09-19 23:31:12:3112 debug: GOT THE SECURITY INFO FOR
+2020-09-19 23:31:24:3124 debug: GETTING THE VEHICLE SECURITY
+2020-09-19 23:31:24:3124 debug: GOT THE SECURITY INFO FOR
+2020-09-19 23:31:54:3154 debug: GETTING THE VEHICLE SECURITY
+2020-09-19 23:31:54:3154 error: Vehicle id: 123 not found.
+2020-09-19 23:32:12:3212 info: API server started on: 3000
+2020-09-19 23:32:58:3258 info: API server started on: 3000
+2020-09-19 23:33:04:334 info: API server started on: 3000
+2020-09-19 23:33:19:3319 info: API server started on: 3000
+2020-09-19 23:33:24:3324 info: API server started on: 3000
+2020-09-19 23:35:12:3512 info: API server started on: 3000
+2020-09-19 23:35:30:3530 info: API server started on: 3000
+2020-09-19 23:36:13:3613 info: API server started on: 3000
+2020-09-19 23:36:27:3627 debug: GETTING THE VEHICLE FUEL
+2020-09-19 23:36:27:3627 error: Vehicle id: 123 not found.
+2020-09-19 23:36:42:3642 debug: GETTING THE VEHICLE FUEL
+2020-09-19 23:36:42:3642 debug: GOT THE FUEL INFO FOR
+2020-09-19 23:36:55:3655 debug: GETTING THE VEHICLE FUEL
+2020-09-19 23:36:55:3655 debug: GOT THE FUEL INFO FOR
+2020-09-19 23:37:17:3717 info: API server started on: 3000
+2020-09-19 23:37:39:3739 info: API server started on: 3000
+2020-09-19 23:37:47:3747 debug: GETTING THE VEHICLE FUEL
+2020-09-19 23:37:47:3747 debug: GOT THE FUEL INFO FOR
+2020-09-19 23:37:53:3753 debug: GETTING THE VEHICLE FUEL
+2020-09-19 23:37:53:3753 debug: GOT THE FUEL INFO FOR
+2020-09-19 23:38:28:3828 info: API server started on: 3000
+2020-09-19 23:38:36:3836 info: API server started on: 3000
+2020-09-19 23:38:38:3838 info: API server started on: 3000
+2020-09-19 23:39:06:396 info: API server started on: 3000
+2020-09-19 23:39:14:3914 debug: GETTING THE VEHICLE FUEL
+2020-09-19 23:39:14:3914 debug: GOT THE BATTERY INFO FOR
+2020-09-19 23:39:22:3922 debug: GETTING THE VEHICLE FUEL
+2020-09-19 23:39:22:3922 debug: GOT THE BATTERY INFO FOR
+2020-09-19 23:42:26:4226 info: API server started on: 3000
+2020-09-19 23:43:56:4356 info: API server started on: 3000
+2020-09-19 23:44:14:4414 info: API server started on: 3000
+2020-09-19 23:45:49:4549 info: API server started on: 3000
+2020-09-19 23:46:33:4633 info: API server started on: 3000
+2020-09-19 23:47:49:4749 info: API server started on: 3000
+2020-09-19 23:47:59:4759 info: API server started on: 3000
+2020-09-19 23:48:21:4821 info: API server started on: 3000
+2020-09-19 23:48:34:4834 info: API server started on: 3000
+2020-09-19 23:48:50:4850 error: Vehicle id: {vehicleId} not found.
+2020-09-19 23:49:08:498 info: API server started on: 3000
+2020-09-19 23:49:23:4923 info: API server started on: 3000
+2020-09-19 23:49:46:4946 info: API server started on: 3000
+2020-09-19 23:49:56:4956 error: Vehicle id: {vehicleId} not found.
+2020-09-19 23:50:19:5019 info: API server started on: 3000
+2020-09-19 23:50:31:5031 error: Vehicle id: 123 not found.
+2020-09-19 23:50:55:5055 info: API server started on: 3000
+2020-09-19 23:51:06:516 info: API server started on: 3000
+2020-09-19 23:51:47:5147 info: API server started on: 3000
+2020-09-19 23:52:43:5243 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:52:51:5251 debug: GETTING THE VEHICLE INFO
+2020-09-19 23:52:51:5251 error: Vehicle id: 123 not found.
+2020-09-19 23:52:59:5259 debug: GETTING THE VEHICLE SECURITY
+2020-09-19 23:52:59:5259 error: Vehicle id: 123 not found.
+2020-09-19 23:53:03:533 debug: GETTING THE VEHICLE SECURITY
+2020-09-19 23:53:03:533 debug: GOT THE SECURITY INFO FOR
+2020-09-19 23:53:11:5311 debug: GETTING THE VEHICLE FUEL
+2020-09-19 23:53:12:5312 debug: GOT THE FUEL INFO FOR

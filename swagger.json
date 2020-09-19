@@ -1,0 +1,298 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Smartcar API",
+      "description": "This API is designed to talk to The GM API to get detail about the cars."
+    },
+    "host": "localhost:3000",
+    "tags": [
+      {
+        "name": "Smartcar API",
+        "description": "API to talk to GM API"
+      }
+    ],
+    "schemes": [
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/vehicles/{vehicleId}": {
+        "parameters": [
+            {
+              "name": "vehicleId",
+              "in": "path",
+              "required": true,
+              "description": "ID of vehicle that we want to find",
+              "type": "string"
+            }
+        ],
+        "get": {
+          "tags": [
+            "Smartcar API"
+          ],
+          "description": "Get the vehicle detail",
+          "parameters": [
+            {
+              "name": "vehicleId",
+              "in": "path",
+              "required": true,
+              "description": "ID of vehicle that we want to find",
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "New user is created",
+              "schema": {
+                "$ref": "#/definitions/VehicleInfo"
+              }
+            },
+            "404": {
+                "description" : "When vehicle not found.",
+                "schema": {
+                    "$ref": "#/definitions/Error"
+                  }
+            }
+          }
+        }
+      },
+      "/vehicles/{vehicleId}/doors": {
+        "parameters": [
+            {
+              "name": "vehicleId",
+              "in": "path",
+              "required": true,
+              "description": "ID of vehicle",
+              "type": "string"
+            }
+        ],
+        "get": {
+          "tags": [
+            "Smartcar API"
+          ],
+          "description": "Get the vehicle's door security Info",
+          "parameters": [
+            {
+              "name": "vehicleId",
+              "in": "path",
+              "required": true,
+              "description": "ID of vehicle that we want to find",
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "New user is created",
+              "schema": {
+                "type": "array",
+                "items" :{
+                    "$ref": "#/definitions/VehicleDoorInfo"
+                }
+              }
+            },
+            "404": {
+                "description" : "When vehicle not found.",
+                "schema": {
+                    "$ref": "#/definitions/Error"
+                  }
+            }
+          }
+        }
+      },
+      "/vehicles/{vehicleId}/fuel": {
+        "parameters": [
+            {
+              "name": "vehicleId",
+              "in": "path",
+              "required": true,
+              "description": "ID of vehicle",
+              "type": "string"
+            }
+        ],
+        "get": {
+          "tags": [
+            "Smartcar API"
+          ],
+          "description": "Get the fuel percentage of the Vehicle",
+          "parameters": [
+            {
+              "name": "vehicleId",
+              "in": "path",
+              "required": true,
+              "description": "ID of vehicle",
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "New user is created",
+              "schema": {
+                "$ref": "#/definitions/VehicleFuelBattery"
+              }
+            },
+            "404": {
+                "description" : "When vehicle not found.",
+                "schema": {
+                    "$ref": "#/definitions/VehicleFuelBatteryError"
+                  }
+            }
+          }
+        }
+      },
+      "/vehicles/{vehicleId}/battery": {
+        "parameters": [
+            {
+              "name": "vehicleId",
+              "in": "path",
+              "required": true,
+              "description": "ID of vehicle",
+              "type": "string"
+            }
+        ],
+        "get": {
+          "tags": [
+            "Smartcar API"
+          ],
+          "description": "Get the battery percentage of the Vehicle",
+          "parameters": [
+            {
+              "name": "vehicleId",
+              "in": "path",
+              "required": true,
+              "description": "ID of vehicle",
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "New user is created",
+              "schema": {
+                "$ref": "#/definitions/VehicleFuelBattery"
+              }
+            },
+            "404": {
+                "description" : "When vehicle not found.",
+                "schema": {
+                    "$ref": "#/definitions/VehicleFuelBatteryError"
+                  }
+            }
+          }
+        }
+      },
+      "/vehicles/{vehicleId}/engine" : {
+          "post" : {
+              "tags" : [
+                  "Smartcar API"
+              ],
+              "description" : "START | STOP the Vehicle",
+              "produces": [
+                "application/json"
+              ],
+              "parameters": [
+                {
+                    "name": "vehicleId",
+                    "in": "path",
+                    "required": true,
+                    "description": "ID of vehicle",
+                    "type": "string"
+                },
+                {
+                  "name": "action",
+                  "in": "body",
+                  "required": true,
+                  "description": "valid values can be START | STOP",
+                  "schema": {
+                    "$ref": "#/definitions/VehicleStartStop"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Vehicle STARTED or STOPPED",
+                  "schema": {
+                    "$ref": "#/definitions/VehicleStartStop"
+                  }
+                }
+              }
+          }
+      }
+    },
+    "definitions": {
+      "VehicleInfo" : {
+        "properties": {
+            "vin": {
+              "type": "string",
+              "uniqueItems": true
+            },
+            "color": {
+              "type": "string"
+            },
+            "doorCount": {
+              "type": "integer"
+            },
+            "driveTrain": {
+              "type": "string"
+            }
+          }
+      },
+      "VehicleDoorInfo" : {
+        "properties" : {
+            "location" : {
+                "type" : "string"
+            },
+            "locked" : {
+                "type" : "string"
+            }
+        }
+      },
+      "Error": {
+          "properties" : {
+            "message": {
+                "type": "string"
+            }
+          }
+      },
+      "VehicleFuelBattery" : {
+          "properties" : {
+              "percentage" : {
+                  "type": "number"
+              }
+          }
+      },
+      "VehicleFuelBatteryError" : {
+        "properties" : {
+            "Message" : {
+                "type": "string"
+            },
+            "endpoint" : {
+                "type" : "string"
+            }
+        }
+      },
+      "VehicleStartStop" : {
+        "properties" : {
+            "action" : {
+                "type": "string"
+            }
+        }
+      }
+    }
+  }

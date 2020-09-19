@@ -10,7 +10,7 @@ function ErrorHandler(res, errorCode, errorMessage){
 // checking the health of the api
 exports.healthcheck = (req, res) => {
     logger.debug("GETTING THE HEALTHCHECK")
-    res.status(200).send({message: "success"})
+    res.status(200).json({message: "success"})
 };
 
 // getting the vehicle info
@@ -37,7 +37,7 @@ exports.getVehicleInfo = (req, res) => {
                 response["color"] = responseData.color.value;
                 response["doorCount"] = responseData.fourDoorSedan.value == "True" ? 4 : 2;
                 response["driveTrain"] = responseData.driveTrain.value;
-                res.status(200).send(response);
+                res.status(200).json(response);
             }
         })
         .catch(error => {
@@ -76,7 +76,7 @@ exports.getVehicleSecurity = (req, res) => {
                     response.push(doorInfo)
                 });
                 logger.debug("GOT THE SECURITY INFO FOR", vehicleID)
-                res.status(200).send(response);
+                res.status(200).json(response);
             }
         })
 };
@@ -126,7 +126,7 @@ exports.getVehicleFuel = (req, res) => {
                     }
                     logger.debug("GOT THE BATTERY INFO FOR", vehicleID)
                 }
-                res.send(response);
+                res.json(response);
             }
         })
 }
@@ -161,7 +161,7 @@ exports.vehicleStartStop = (req, res) => {
                     else {
                         var responseData = result.data.actionResult.status;
                         response["status"] = responseData == "EXECUTED" ? "success" : "error"
-                        res.status(200).send(response)
+                        res.status(200).json(response)
                     }
                 })
         }

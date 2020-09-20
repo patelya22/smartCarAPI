@@ -6,5 +6,4 @@ The Generic Motors (GM) car company has terrible API. It returns badly structure
    ![Image of Flow](./smartcar_api_flow.png)
 
 ### Deployment
-   1. Clone the repo
-   `<git clone git@github.com:patelya22/smartCarAPI.git>`
+   1. Clone the repo `git clone git@github.com:patelya22/smartCarAPI.git`

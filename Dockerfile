@@ -4,9 +4,11 @@ RUN mkdir -p /usr/src/app
 
 WORKDIR /usr/src/app
 
-COPY . .
+COPY package.json .
 
-RUN npm install
+RUN npm install --quiet
+
+COPY . .
 
 EXPOSE 3000
 

@@ -38,6 +38,7 @@ exports.getVehicleInfo = (req, res) => {
                 response["doorCount"] = responseData.fourDoorSedan.value == "True" ? 4 : 2;
                 response["driveTrain"] = responseData.driveTrain.value;
                 res.status(200).json(response);
+                logger.debug("GETTING THE VEHICLE INFO", vehicleID)
             }
         })
         .catch(error => {
